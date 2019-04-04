@@ -1,0 +1,10 @@
+spring: 
+  redis: 
+    host: 192.168.9.17
+    port: 9385
+    password: enMeag165elganeonaq74gpEWN42
+    timeout: 3000
+    max-active: 2000
+    max-idle: 500
+    min-idle: 50
+    max-wait: 1800

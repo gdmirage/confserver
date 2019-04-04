@@ -1,0 +1,23 @@
+spring:
+  datasource:
+      url: jdbc:mysql://dev.poseidondbm.kokoerp.com/poseidon?useUnicode=true&characterEncoding=utf-8
+      username: poseidon
+      password: QNSJAU5epzbcf1k8
+      driver-class-name: com.mysql.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  mapperLocations: classpath:mybatis/mapper/*.xml
+  typeAliasesPackage: com.yks.poseidon.common.entity
+  config-location: classpath:mybatis/mybatis-config.xml
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+      
+rsa: 
+  publicKey: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCSlvQsBDkYYbeKG2Sox5vWPf+UAZbkNqtj+mjhMpKTwJeawhTvYVYWXL5IwtXEmqwHMRS8XClRNCEgVwHkgt/BKBCkN4FrPEwJJ0OqiVbIPNGZjzeIIHnHCHaLPpcaZpGiCR2JtpnalzTU/d6p6YbW8fhOo9IZOzvwZgZ1FgiY6wIDAQAB
+  privateKey: MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBAJKW9CwEORhht4obZKjHm9Y9/5QBluQ2q2P6aOEykpPAl5rCFO9hVhZcvkjC1cSarAcxFLxcKVE0ISBXAeSC38EoEKQ3gWs8TAknQ6qJVsg80ZmPN4ggeccIdos+lxpmkaIJHYm2mdqXNNT93qnphtbx+E6j0hk7O/BmBnUWCJjrAgMBAAECgYBY+uJqGYIix6XmYixeuxNgH7AUwkY6bujoPicNk2of38bmvKqCh93+ovsqJYIm3hBQKT3B/FtkHDWDcO0ILVzt8WfTqArl8V0DgmnJ4c8LrDTyiIQc9wkEMILJJbw0LslUMFHLdm/lEOS81HNHQ0C7JC//evkcANi5kG5AquN8KQJBANPwwdz1ehS4UyC7NdEikWLUQ9pMwZVVzbDy6mt7Ihr+ln82r3w6n0+q5wTG3M+EGwN0zWpjIlDy23/5qHlZ4lcCQQCxEEwzhRNhxWX2SDr8N+lTHAufDxLYWb7PXTZK3d7UwD8OEzsxTxNtavcLpSI0QpGvVo6Lo8dTsJ2OZZkxkSmNAkAa0m9WbWKj2Kf8jnTDIOLRZRepOumM4q0DZdqw+4ZXcDzPoLYYvLqItJJEEn7DbG6Ww2NzwVQIdpO84HWn1e5FAkAtcBM9/V517qQ1yV9pridwLnhE/ydE4fL3X+I44Cr4ycTkpcbA5pwDrjlrgZr/cj3Ukw/Ngd/6+A3WpvfjIm9ZAkAoxX1m/75qeLMH6UTHZGn0qe88cG4TgYFlp3DZ/q5VfPUELGqg7/vnZg44nsj5EoEbIMViDNNsLdiNBvPhrakd

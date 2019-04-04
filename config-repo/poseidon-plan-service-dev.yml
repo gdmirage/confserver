@@ -1,0 +1,15 @@
+server:
+  port: 10101
+
+spring:
+  application:
+    name: poseidon-plan-service
+
+
+poseidon:
+  third:
+    sso:
+      name: poseidon  #该系统在SSO上面的简码#
+      ticket_url: http://sso.youkeshu.com/?c=of_base_sso_api&a=ticket&callback=callback&name=${poseidon.third.sso.name}
+      info_url: http://sso.youkeshu.com/?c=of_base_sso_api&a=check&space=default&name=${poseidon.third.sso.name}&role=1
+      md5_salt: 123456

@@ -1,0 +1,14 @@
+server:
+  port: 10104
+
+spring:
+  application:
+    name: poseidon-job-service
+
+poseidon:
+  job:
+    userinfo:
+      username: opsuser
+      password: yks147258369
+      token_url: https://userinfo.youkeshu.com/api/get_token
+      info_url: https://userinfo.youkeshu.com/api/info

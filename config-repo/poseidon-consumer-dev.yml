@@ -1,0 +1,15 @@
+server:
+  port: 8088
+    
+spring: 
+  profiles: dev
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  application:
+    name: yks-poseidon-consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://dev.eureka.kokoerp.com:8761/eureka/
